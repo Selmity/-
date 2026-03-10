@@ -1,0 +1,641 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Стилизация header */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 100px;
+
+}
+
+.header-title {
+    font-family: Pacifico;
+    font-size: 33px;
+}
+
+.nav-menu-header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+}
+
+.nav-menu-header-item {
+    font-family: Poppins;
+    text-decoration: none;
+    color: #6C6C6C;
+    font-size: 14px;
+    padding-right: 40px;
+}
+
+.active {
+    color: #AC1313;
+    font-weight: 400;
+}
+
+.nav-menu-header-item-right {
+    display: flex;
+    justify-content: center;
+    height: 17px;
+    font-family: Poppins;
+    text-decoration: none;
+    color: #6C6C6C;
+    font-size: 14px;
+    padding-right: 20px;
+    border-right: 1px solid #EBEBEB;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    padding-left: 20px;
+
+}
+
+.cart img {
+    width: 18px;
+    height: 20px;
+}
+
+.cart h6 {
+    font-family: Libre Franklin;
+    align-self: center;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Стилизация первой секции */
+
+.first-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(backgroundfor1section.png);
+    align-items: center;
+    padding-top: 131px;
+    padding-bottom: 131px;
+}
+
+.first-section img {
+    width: 784px;
+    height: 445px;
+    background-color: transparent;
+}
+
+.first-section-info {
+    padding-left: 100px;
+    background-color: transparent;
+}
+
+.pompeo-pottery {
+    font-family: poppins;
+    color: #D77474;
+    letter-spacing: 2px;
+}
+
+.first-section-title {
+    font-family: poppins;
+    font-weight: 700;
+}
+
+.first-section-p {
+    font-family: Libre Franklin;
+    color: #6C6C6C;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.first-section-button {
+    font-family: poppins;
+    color: #FFFFFF;
+    background-color: #AC1313;
+    border: none;
+    padding: 20px 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 22px;
+    font-size: 14px;
+
+}
+
+.and-letter {
+    color: rgba(172, 19, 19, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 68px;
+    font-weight: 400;
+}
+
+/* Стилизация второй секции */
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.product-categories {
+    font-family: poppins;
+    color: #D77474;
+    letter-spacing: 2px;
+}
+
+.second-section-title {
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.second-section-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.second-section-imgs img {
+    width: 480px;
+    height: 480px;
+}
+
+.special-img {
+    width: 600px;
+    height: 600px;
+}
+
+.second-section-descriptions {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 200px;
+    padding-top: 100px;
+}
+
+.second-section-description-title {
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.second-section-description-p {
+    font-family: Libre Franklin;
+    color: #6C6C6C;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Стилизация третьей секции */
+
+.third-section {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.vase1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    padding-bottom: 30px;
+}
+
+.vase1-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vase1-my-div {
+    position: absolute;
+    width: 700px;
+    height: 290px;
+    background-color: #F2F2F2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.vase1 img {
+    width: 375px;
+    height: 763px;
+    position: relative;
+    z-index: 1;
+}
+
+.vase1-h4 {
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.vase1-p {
+    font-family: Libre Franklin;
+    color: #6C6C6C;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.vase1-text a {
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black
+}
+
+.vase2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+}
+
+.vase2-div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vase2-my-div {
+    position: absolute;
+    width: 700px;
+    height: 290px;
+    background-color: #F2F2F2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.vase2 img {
+    width: 525px;
+    height: 625px;
+    position: relative;
+    z-index: 1;
+}
+
+.vase2-h4 {
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.vase2-p {
+    font-family: Libre Franklin;
+    color: #6C6C6C;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.vase2-text a {
+    font-family: poppins;
+    font-size: 25px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black
+}
+
+/* Стилизация четвёртой секции */
+
+.fourth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.our-online-store {
+    font-family: poppins;
+    color: #D77474;
+    letter-spacing: 2px;
+}
+
+.fourth-section-title {
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 100px;
+}
+
+.our-online-store,
+.fourth-section-title {
+    text-align: center;
+}
+
+.cards-of-collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-of-collection {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    padding-top: 10px;
+}
+
+.card-title {
+    font-family: Libre Franklin;
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: rgba(108, 108, 108, 1);
+}
+
+.card-price {
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.fourth-section-button {
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: #AC1313;
+    padding: 20px 50px;
+    border: none;
+    margin-top: 60px;
+}
+
+/* Стилизация пятой секции */
+
+.fifth-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(bgfor5section.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.fifth-section-text {
+    padding-left: 100px;
+    padding-top: 220px;
+    padding-bottom: 320px;
+}
+
+.fifth-section-pompeo-pottery {
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: #D77474;
+    letter-spacing: 2px;
+}
+
+.fifth-section-title {
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.fifth-section-p {
+    font-family: Libre Franklin;
+    color: #6C6C6C;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.fifth-section-p-special {
+    font-family: libre franklin;
+    font-weight: 700;
+    color: #AC1313;
+    text-decoration: underline;
+}
+
+.fifth-section-button {
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    background-color: #AC1313;
+    padding: 20px 50px;
+    border: none;
+}
+
+/* Стилизация шестой секции */
+
+.sixth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.plane-img {
+    background-color: #EBB96A;
+    margin-bottom: 30px;
+}
+
+.latest-news {
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 400;
+    color: #D77474;
+    letter-spacing: 2px;
+}
+
+.sixth-section-title {
+    font-family: poppins;
+    font-size: 40px;
+    font-weight: 400;
+    padding-bottom: 50px;
+}
+
+.input-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.sixth-section-input {
+    font-family: Lato;
+    color: rgba(161, 161, 161, 1);
+    padding: 10px 30px;
+    width: 320px;
+    border-radius: 0;
+    border: 2px solid rgba(235, 235, 235, 1);
+}
+
+.sixth-section-button {
+    font-family: LAto;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 30px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.sixth-section-main-p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: lato;
+    font-size: 14px;
+    font-weight: 400;
+    padding-top: 40px;
+    color: #A1A1A1;
+}
+
+.sixth-section-main-p::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #7C3AED;
+    flex-shrink: 0;
+    margin-right: 9px;
+}
+
+/* Стилизация седьмой секции */
+
+.seventh-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #EBEBEB;
+    background-color: #FCFCFC;
+}
+
+.seventh-section-title {
+    font-family: pacifico;
+    font-weight: 400;
+    font-size: 33px;
+    padding-bottom: 30px;
+}
+
+.seventh-section-p {
+    text-align: center;
+    font-family: Libre Franklin;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6C6C6C;
+    padding-bottom: 50px;
+}
+
+.seventh-section-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+.seventh-section-info img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.info-email,
+.info-find,
+.info-call {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.email-title,
+.find-title,
+.call-title {
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.email,
+.find,
+.call {
+    font-family: Libre Franklin;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6C6C6C;
+}
+
+.footer {
+    height: 85px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9F9F9;
+}
+
+.footer-p {
+    font-family: Libre Franklin;
+    font-weight: 400;
+    font-size: 12px;
+    color: #6C6C6C;
+}
+
+.footer-designer {
+    color: #000000;
+    padding: 0 9px 0 3px;
+}
+
+.image-license {
+    color: #000000;
+    padding: 0 3px 0 9px;
+}
+
+.powerer {
+    color: #000000;
+    padding: 0 0 0 9px;
+}
