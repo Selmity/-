@@ -125,9 +125,20 @@ html {
     letter-spacing: 2px;
     line-height: 22px;
     font-size: 14px;
-
+    transition: 0.5s ease;
 }
 
+.first-section-button:hover {
+    background-color: #630c0c;
+    transform: translateY(-2px);
+}
+
+.and-letter {
+    color: rgba(172, 19, 19, 1);
+    font-family: 'Playfair Display', serif;
+    font-size: 68px;
+    font-weight: 400;
+}
 .and-letter {
     color: rgba(172, 19, 19, 1);
     font-family: 'Playfair Display', serif;
@@ -638,4 +649,5 @@ html {
 .powerer {
     color: #000000;
     padding: 0 0 0 9px;
+
 }
