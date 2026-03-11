@@ -125,7 +125,7 @@ html {
     letter-spacing: 2px;
     line-height: 22px;
     font-size: 14px;
-    transition: 0.5s ease;
+    transition: 0.7s ease;
 }
 
 .first-section-button:hover {
@@ -651,3 +651,4 @@ html {
     padding: 0 0 0 9px;
 
 }
+
