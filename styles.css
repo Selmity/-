@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0D1117;
+    color: #C9D1D9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Liberation Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* ---------- ШАПКА ---------- */
+.header {
+    background-color: #151A21;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #8b949e68;
+    padding-left: 10px;
+}
+
+.header h2 {
+    font-size: 24px;
+    padding: 10px 5px;
+    color: #58a6ff;
+}
+
+.header-subtitle {
+    font-size: 16px;
+    padding: 0 5px 10px 5px;
+    color: #8b949e;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    padding: 10px;
+    align-self: center;
+}
+
+/* ---------- ВКЛАДКИ ---------- */
+.nav-tabs {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    background-color: #161B22;
+    padding: 15px;
+    border-bottom: 1px solid #8b949e68;
+}
+
+.nav-tab {
+    color: #C9D1D9;
+    transition: 0.6s;
+}
+
+.nav-tab:hover {
+    scale: 1.4;
+    color: #4BA4ED;
+}
+
+.nav-tab.active {
+    border-bottom: 2px solid #58A6FF;
+    padding-bottom: 5px;
+}
+
+/* ---------- КОНТЕЙНЕР ---------- */
+.container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------- САЙДБАР ---------- */
+.sidebar {
+    width: 280px;
+    min-width: 280px;
+    max-width: 280px;
+    padding-inline: 15px;
+    padding-top: 20px;
+    color: #58A6FF;
+    font-size: 14px;
+    border-right: 1px solid #8b949e68;
+}
+
+.section-number {
+    padding-right: 10px;
+    color: #8b949e;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.section-number .para {
+    font-size: 22px;
+    font-weight: 600;
+    color: #C9D1D9;
+    margin-right: 2px;
+}
+
+.sidebar a {
+    color: #58A6FF;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.sidebar h3 {
+    padding-bottom: 10px;
+    margin-top: 25px;
+    color: #C9D1D9;
+    border-bottom: 1px solid #8b949e68;
+}
+
+.sidebar h3:first-child {
+    margin-top: 0;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: baseline;
+    transition: 0.6s;
+    margin-top: 8px;
+}
+
+.sidebar-link:hover {
+    scale: 1.1;
+    translate: 10px;
+}
+
+/* ---------- КОНТЕНТ ---------- */
+.content {
+    flex: 1;
+    max-width: 870px;
+    margin: 0 auto;
+    padding: 10px 30px 40px 30px;
+}
+
+.content-p {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.content ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.content-titles {
+    margin-bottom: 20px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8b949e68;
+}
+
+.beginning-title {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #8b949e68;
+}
+
+/* ---------- ФУТЕР ---------- */
+.footer {
+    margin-top: 50px;
+    padding-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.footer-links a {
+    color: #C9D1D9;
+}
+/* ---------- СЛОВНИК ---------- */
+.dict-letter {
+    font-size: 22px;
+    color: #58A6FF;
+    margin-top: 35px;
+    margin-bottom: 12px;
+    padding-left: 4px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.dict-letter:first-of-type {
+    margin-top: 20px;
+}
+
+.dict-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px 25px;
+    margin-bottom: 10px;
+    padding-left: 8px;
+}
+
+.dict-grid .content-p {
+    margin-top: 0;
+}
+
+/* Расширяем контент только на странице словаря */
+.slovnyk-page .content {
+    max-width: 1300px;
+}
+
+.slovnyk-page .container {
+    max-width: 1650px;
+}
+
+/* На средних экранах — 2 колонки */
+@media (max-width: 1300px) {
+    .dict-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .slovnyk-page .content,
+    .slovnyk-page .container {
+        max-width: 1200px;
+    }
+}
+
+/* На узких — одна */
+@media (max-width: 900px) {
+    .dict-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ---------- ТАБЛИЦЯ (для сторінки «Дати») ---------- */
+.wikitable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.wikitable th,
+.wikitable td {
+    border: 1px solid #8b949e68;
+    padding: 10px 14px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.wikitable th {
+    background-color: #161B22;
+    color: #58A6FF;
+    font-weight: 600;
+}
+
+.wikitable tr:nth-child(even) td {
+    background-color: #12171D;
+}
+
+.wikitable td:first-child {
+    white-space: nowrap;
+    color: #58A6FF;
+    font-weight: 600;
+    width: 180px;
+}
